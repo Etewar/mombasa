@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width" initial-scale=1.0>
+        <title>Mombasa</title>
+        <link href="index.css" rel="stylesheet" type="text/css" />
+        <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+        <script type="text/javascript" src="index.js"></script>
+    </head>
+    <body>
+        <div>
+            <!-- TOWNS -->
+            <div class="row">
+                <p id="mombasa" class="town column" style="color: rgba(0, 0, 0, 0.8);">Mombasa</p>
+                <p id="stlouis" class="town column";>Saint-Louis</p>
+            </div>
+            <div class="row">
+                <p id="capetown" class="town column" style="color: #e74c3c;">Cape Town</p>
+                <p id="cairo" class="town column" style="color: #e67e22;">Cairo</p></div>
+            </div>
+            <!-- FIRST PLAYER -->
+            <div class="row">
+                <p id="firstPlayer" class="column">First player: </p>
+            </div>
+            <!-- CHECKBOX -->
+            <div id="usingEdiv" class="row">
+                <label id="usingELabel" for="usingECheck" class="column">
+                    <input id="usingECheck" type="checkbox">
+                    Using Track E
+                </label>
+            </div>
+            <!-- BUTTON -->
+            <div style="width: 100%; text-align: center;">
+                <input type="button" id="rerollButton" onclick="setup()" value="Reroll"l>
+            </div>
+
+        </div>
+        <script language="javascript"> setup() </script>
+    </body>
+</html>

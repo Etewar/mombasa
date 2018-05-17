@@ -1,0 +1,90 @@
+body {
+    background-color: #666;
+
+    font-family: 'Lato', 'sans-serif';
+    font-size: 6vh;
+    color: #ecf0f1;
+    line-height: 0.1;
+}
+
+.town {
+    text-align: center;
+}
+
+.column {
+    float: left;
+    width: 100%;
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+label#usingELabel {
+    font-size: 3vh;
+    text-align: center;
+    width: 100%;
+    padding-bottom: 2vh;
+}
+
+p#firstPlayer {
+    font-size: 4.5vh;
+    text-align: center;
+    width: 100%;
+}
+
+input[type=checkbox]#usingECheck {
+    width: 3vh;
+    height: 3vh;
+    transform: translateY(0.4vh);
+}
+
+input[type=button]#rerollButton {
+    font-size: 3vh;
+    font-family: 'Lato', 'sans-serif';
+    color: #2c3e50;
+    background-color: #ecf0f1;
+
+    box-shadow: 0vh 0.8vh #2c3e50;
+
+    width: 25vw;
+    height: 5vh;
+    border: none;
+    border-radius: 10px;
+
+}
+
+input[type=button]#rerollButton:hover {
+    background-color: #ffffff;
+}
+
+input[type=button]#rerollButton:active {
+    transform: translateY(0.4vh);
+    box-shadow: 0 0.4vh #2c3e50;
+}
+
+
+input:focus {
+    outline: none;
+}
+
+
+@media screen and (orientation: landscape) {
+
+    body {
+        font-size: 6vw;
+        line-height: 0.2;
+    }
+
+    p.town {
+        display: inline;
+        min-width: 25vw;
+        min-height: 8vh;
+    }
+
+    .column {
+        width: 50%;
+    }
+}
